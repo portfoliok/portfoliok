@@ -47,3 +47,52 @@ body {
         width: 20%; /* Adjust width further for larger screens */
     }
 }
+.contact-section {
+    padding: 20px;
+    
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
