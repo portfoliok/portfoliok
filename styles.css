@@ -1,0 +1,49 @@
+#portfolio {
+    margin: 20px;
+}
+
+.category {
+    margin: 20px 0;
+}
+
+.video {
+    margin: 10px 0;
+}
+/* Base styles for smaller screens */
+body {
+    font-size: 16px; /* Base font size */
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Increase font size for tablets and larger devices */
+    }
+
+    header, footer {
+        text-align: center; /* Center-align header and footer on larger screens */
+    }
+
+    main {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .category {
+        display: inline-block; /* Make categories inline for larger screens */
+        width: 30%; /* Adjust width */
+        margin: 10px; /* Spacing between categories */
+    }
+
+    .video {
+        width: 100%; /* Make videos responsive */
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1024px) {
+    .category {
+        width: 20%; /* Adjust width further for larger screens */
+    }
+}
